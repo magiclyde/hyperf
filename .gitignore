@@ -13,3 +13,5 @@ vendor/
 *.lock
 node_modules/*
 *.cache
+
+tmp/
