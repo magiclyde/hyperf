@@ -14,7 +14,12 @@ namespace HyperfTest\Command\Command;
 use Hyperf\Command\Command;
 use Hyperf\Event\EventDispatcher;
 use Hyperf\Event\ListenerProvider;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * @method int execute(InputInterface $input, OutputInterface $output)
+ */
 class FooExceptionCommand extends Command
 {
     public function __construct(string $name = null)

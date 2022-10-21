@@ -12,7 +12,12 @@ declare(strict_types=1);
 namespace HyperfTest\Command\Command;
 
 use Hyperf\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * @method int execute(InputInterface $input, OutputInterface $output)
+ */
 class FooCommand extends Command
 {
     public function handle()
